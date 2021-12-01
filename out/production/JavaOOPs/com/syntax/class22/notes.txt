@@ -1,0 +1,14 @@
+Rules for casting objects/classes
+1) We can store a child class object inside a parent type variable because
+inheritance is one way from Parent to child.
+2) we can create arrays of type Parent and can store all the objects of
+child classes inside that array then we can write loops to call all the
+methods from all the classes.
+3) we can not store/cast a parent class object to child class variable but
+if parent type variable already contains the child object then we can
+get it back by casting it.
+FinalKeyword:
+if we write final with variable we can not change its value either we should
+initialize it right away or thorough the constructor.
+when used with method we can't override that method in child class
+when used with class we no class can extend from that class.
