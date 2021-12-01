@@ -5,7 +5,7 @@ public class RegistrationTester {
 
         Registration reg = new Registration();
         reg.setEmail("yahoo");
-        System.out.println(reg.getEmail("yahoo"));
+        System.out.println(reg.getEmail());
         reg.setUserName("marina178");
         System.out.println(reg.getUserName());
         reg.setPassword("12376&@@");

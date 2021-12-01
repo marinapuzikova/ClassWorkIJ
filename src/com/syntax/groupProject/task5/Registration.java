@@ -34,13 +34,7 @@ public class Registration {
         }
     }
 
-    public String getEmail(String email) {
-        if (email.equals(this.email)) {
-            return this.email;
-        } else {
-            return "Invalid email";
-        }
-    }
+    public String getEmail() {return email;}
 
     public void setUserName(String userName) {
 
