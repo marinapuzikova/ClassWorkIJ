@@ -1,5 +1,7 @@
 package com.syntax.groupProject.task5;
 
+import java.util.Locale;
+
 public class Registration {
     /*
   Create Registration Class in which you would have variables as email, userName and password
@@ -15,19 +17,11 @@ public class Registration {
     private String userName;
     private String password;
 
-    Registration() {
 
-    }
-
-    public Registration(String email, String userName, String password) {
-        setEmail(email);
-        setUserName(userName);
-        setPassword(password);
-    }
 
     public void setEmail(String email) {
 
-        if (email.equals("yahoo")) {
+        if (email.toLowerCase().contains("@yahoo")) {
             this.email = email;
         } else {
             System.out.println("Invalid email");
@@ -51,7 +45,7 @@ public class Registration {
 
     public void setPassword(String password) {
 
-        if (!password.isEmpty() && password.length() > 6) {
+        if (!password.isEmpty() && password.length() > 6 && !password.equals(userName)) {
             this.password = password;
         } else {
             System.out.println("Invalid password");
